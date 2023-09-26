@@ -75,30 +75,34 @@ body {
     width: 100%;
 }
 .contacts li:target > * {
-    transform: translateX(-21em) ;
+    transform: translateX(-15em) ;
 }
 
-
+/*----hw3--------------------------------------*/
 .contacts .menu a, .report a {
     color: white;
     text-decoration: none;
-    padding-right: 1em;
+    padding-right: 0.5em;
+    display: inline-block;
 }
 .contacts .menu a:hover {
     color: rgb(0, 255, 0);
 }
 .contacts .report > div {
-   opacity: 0;
-}
-.contacts ul:target .report > div {
+    opacity: 0;
+    margin-left: -10em;
+    transform: translateX(-10em); 
+    transition: 1s;
+  }
+  .contacts .report > div a:hover {
+    color: rgb(0, 255, 0);
+  }
+  .contacts #contact-2:target .report > div {
     opacity: 1;
-}
-
-.contacts ul:target>* {
-transform: translateX(0em);
-}
-
-
+    margin-left: 0em;
+    transform: translateX(0); 
+  }
+/*----------------------------------------------*/
 
 
 .status.off {
